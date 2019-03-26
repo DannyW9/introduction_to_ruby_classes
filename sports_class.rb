@@ -21,8 +21,16 @@ class Sports
     end
   end
 
+  # Could refactor
+  # return @players_list.include?(player_check)
+  # evaluates and returns true or false
+
   def add_points(result)
     @points += 1 if result == "win"
   end
-  
+
 end
+
+# 0 points would be default for every team created
+# Instead of passing 0 into the test setup
+# Create @points = 0 in the initialize. Do not pass points into the ()
